@@ -3,11 +3,13 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-  }
-  body {
+}
+
+body {
     background-color: #E0218A;
-  }
-  .card {
+}
+
+.card {
     width: 320px;
     height: 200px;
     position: absolute;
@@ -19,21 +21,25 @@
     -webkit-perspective: 1200px;
     perspective: 1200px;
     transition: 1s;
-  }
-  .card:hover {
+}
+
+.card:hover {
     transform: rotate(-5deg);
-  }
-  .card:hover .outside {
+}
+
+.card:hover .outside {
     transform: rotateY(-130deg);
-  }
-  .outside,
-  .inside {
+}
+
+.outside,
+.inside {
     height: 100%;
     width: 50%;
     position: absolute;
     left: 50.1%;
-  }
-  .inside {
+}
+
+.inside {
     background: linear-gradient(to right, #e7e7e7, #ffffff 30%);
     color: #E0218A;
     padding: 0 20px;
@@ -43,55 +49,64 @@
     justify-content: space-around;
     align-items: center;
     left: 50%;
-  }
-  #other-inside {
+}
+
+#other-inside {
     font-size: 8px;
-  }
-  .outside {
+}
+
+.outside {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     z-index: 1;
     transform-origin: left;
     transition: 2s;
     cursor: pointer;
-  }
-  .front,
-  .back {
+}
+
+.front,
+.back {
     height: 100%;
     width: 100%;
     position: absolute;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform: rotateX(0deg);
-  }
-  .front {
+}
+
+.front {
     background-color: #ffffff;
     padding: 0px 2px 0px 2px;
-  }
-  .back {
+}
+
+.back {
     transform: rotateY(180deg);
     background: linear-gradient(to left, #e7e7e7, #ffffff 30%);
-  }
-  .cake {
+}
+
+.cake {
     width: 100%;
     position: absolute;
     bottom: 10px;
-  }
-  .cake img{
+}
+
+.cake img {
     width: 70%;
     height: 70%;
     border-radius: 50%;
     margin-left: 15%;
-  }
-  .outside p {
+}
+
+.outside p {
     font-size: 11.5px;
     text-transform: uppercase;
     margin-top: 15px;
     text-align: center;
     letter-spacing: 3px;
     color: #000046;
-  }
-  .inside h1 {
+}
+
+.inside h1 {
     font-size: 60px;
     line-height: 60px;
-  }
+}
